@@ -1,0 +1,27 @@
+# set up your enviroment to run Genus and Innovus 25.12 or later
+setup ddi DDI251/25.12-s079_1
+
+# Replace with your Stratus HLS installation area
+setenv STRATUS_HLS_INSTALL /hls/release/stratus_25.02.001-p
+
+# Replace with the directory with all your RTL and hl5.sdc in it.
+setenv STRATUS_RTL /grid/tfo/vol119/jaredlee/work_dir/STANFORD/STRATUS_DATA
+
+# Build the flow template
+innovus -stylus -init flow_scripts/write_template.tcl
+
+# Copy the flow_scripts into the newly created scripts directory
+cp flow_scripts/* scripts/.
+
+# Predict the Genus/Innovus run using the flowtool
+flowtool -predict summary > predict.summary
+# Is the predict.summary ERROR free?
+
+# Predict the script for flowtool. 
+#   NOTE: THis is useful for know what command came from what script
+flowtool -predict script > predict.script
+
+# Run the flow
+flowtool -simple_output -run_tag run1
+# Your run will be in the run1 directory
+

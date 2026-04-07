@@ -1,0 +1,28 @@
+{PATTERN m1_followpin {TYPE FOLLOWPIN}} 
+{PATTERN m8_stripe {TYPE STRIPE} {DIRECTION VERTICAL} {WIDTH 5.0 5.0} {SPACING 20.0}}
+{PATTERN m9_stripe {TYPE STRIPE} {DIRECTION HORIZONTAL} {WIDTH 5.0 5.0} {SPACING 20.0}}
+
+{REGION
+
+  {RING corering {EXTENDWIRE NONE} {OUTER} {LAYER Metal9 Metal9 Metal8 Metal8} {NET VSS VDD} {WIDTH 10} {OFFSET 0.5} {SPACING 0.5}}
+
+  {LAYER Metal1  
+    {METAL m1_fpin_vdd m1_followpin {NET VDD}}  
+    {METAL m1_fpin_vss m1_followpin {NET VSS}}
+  } 
+
+
+  {LAYER Metal8 {SNAPTO GRID} 
+    {METAL M8_PG_STRIPE m8_stripe
+       {NET VSS VDD} {STEPDISTANCE 50.00 *} {OFFSET 5 *} {EXTENDTO corering}
+    }
+  }
+
+{LAYER Metal9 {SNAPTO GRID} 
+    {METAL M9_PG_STRIPE m9_stripe
+       {NET VSS VDD} {STEPDISTANCE * 50.00} {OFFSET * 5} {EXTENDTO corering}
+    }
+  }
+
+}
+
