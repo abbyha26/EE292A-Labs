@@ -1,0 +1,78 @@
+Program: ../soft/div_10.txt	 Config: BASIC_BEH	 Time: 148670
+INSTR TOT: 10454
+   JUMP  : 31
+   BRANCH: 1239
+   MEM   : 2266
+   OTHER : 6917
+Program: ../soft/div_10.txt	 Config: BASIC_BEH	 Time: 148670
+INSTR TOT: 10454
+   JUMP  : 31
+   BRANCH: 1239
+   MEM   : 2266
+   OTHER : 6917
+Program: ../soft/div_10.txt	 Config: BASIC_BEH	 Time: 148670
+INSTR TOT: 10454
+   JUMP  : 31
+   BRANCH: 1239
+   MEM   : 2266
+   OTHER : 6917
+Program: ../soft/div_10.txt	 Config: BASIC_POFF_BEH	 Time: 148670
+INSTR TOT: 10454
+   JUMP  : 31
+   BRANCH: 1239
+   MEM   : 2266
+   OTHER : 6917
+Program: ../soft/div_10.txt	 Config: PIPE_SOFT1_BEH	 Time: 148670
+INSTR TOT: 10454
+   JUMP  : 31
+   BRANCH: 1239
+   MEM   : 2266
+   OTHER : 6917
+Program: ../soft/aes256_10.txt	 Config: BEH	 Time: 6.35724e+06
+INSTR TOT: 193501
+   JUMP  : 541
+   BRANCH: 19719
+   MEM   : 74528
+   OTHER : 98713
+Program: ../soft/aes256.txt	 Config: BEH	 Time: 655980
+INSTR TOT: 20140
+   JUMP  : 69
+   BRANCH: 2125
+   MEM   : 7755
+   OTHER : 10191
+Program: ../soft/basic.txt	 Config: BEH	 Time: 4320
+INSTR TOT: 140
+   JUMP  : 11
+   BRANCH: 9
+   MEM   : 19
+   OTHER : 101
+Program: ../soft/mmult_10.txt	 Config: BEH	 Time: 268380
+INSTR TOT: 8453
+   JUMP  : 31
+   BRANCH: 1239
+   MEM   : 2266
+   OTHER : 4917
+Program: ../soft/aes256_10.txt	 Config: BEH	 Time: 6.35724e+06
+INSTR TOT: 193501
+   JUMP  : 541
+   BRANCH: 19719
+   MEM   : 74528
+   OTHER : 98713
+Program: ../soft/aes256.txt	 Config: BEH	 Time: 655980
+INSTR TOT: 20140
+   JUMP  : 69
+   BRANCH: 2125
+   MEM   : 7755
+   OTHER : 10191
+Program: ../soft/basic.txt	 Config: BEH	 Time: 4320
+INSTR TOT: 140
+   JUMP  : 11
+   BRANCH: 9
+   MEM   : 19
+   OTHER : 101
+Program: ../soft/mmult_10.txt	 Config: BEH	 Time: 268380
+INSTR TOT: 8453
+   JUMP  : 31
+   BRANCH: 1239
+   MEM   : 2266
+   OTHER : 4917

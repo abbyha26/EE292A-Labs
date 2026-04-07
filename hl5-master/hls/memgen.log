@@ -1,0 +1,28 @@
+  INFO: Target technology path: ./mem_virtex7
+  INFO: Found SRAM definition                   BRAM_16384x1  16384  1-bit words  2 read/write ports 
+  INFO: Found SRAM definition                    BRAM_8192x2   8192  2-bit words  2 read/write ports 
+  INFO: Found SRAM definition                    BRAM_4096x4   4096  4-bit words  2 read/write ports 
+  INFO: Found SRAM definition                    BRAM_2048x8   2048  8-bit words  2 read/write ports 
+  INFO: Found SRAM definition                   BRAM_1024x16   1024 16-bit words  2 read/write ports 
+  INFO: Found SRAM definition                    BRAM_512x32    512 32-bit words  2 read/write ports 
+  INFO: Output path: memlib
+  INFO: Stratus memory library path: ./memlib
+  INFO: Memory list file: memlist_virtex7
+  INFO: Generating hl5_block_1w1r...
+        51200 words, 32 bits, 1w:1r
+        read_interfaces 1
+        write_interfaces 1
+        duplication_factor 1
+        distribution_factor 1
+        need_dual_port True
+        need_parallel_rw True
+        d-banks 1
+        h-banks 1
+        v-banks 25
+        hh-banks 4
+        bank type BRAM_2048x8
+        Write interfaces are assigned to ports [0]
+        Read interfaces are assigned to ports [1]
+        Total area 100.0
+  INFO: Generating SystemC explicit memory definition for hl5_block_1w1r
+  INFO: Generating Stratus bdw_memgen input for hl5_block_1w1r

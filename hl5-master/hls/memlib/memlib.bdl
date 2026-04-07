@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<lib_catalogue>
+	<tool_log>
+		<tool_name>Memory Model Generator</tool_name>
+		<tool_kind>ModelGenerator</tool_kind>
+		<tool_tech>NONE</tool_tech>
+		<version>25.02-p001</version>
+		<user>skanchi</user>
+		<hostname>rmp-skanchi</hostname>
+		<cwd></cwd>
+		<output_dir></output_dir>
+		<exit_status>-1</exit_status>
+	</tool_log>
+	<name>memlib</name>
+	<version>21.20-d001-internal</version>
+	<lib_type>MEMORY</lib_type>
+	<param_table>
+	</param_table>
+	<source_file>
+		<path>c_parts/hl5_block_1w1r.cc</path>
+		<file_kind>RTL_C</file_kind>
+		<module_name>hl5_block_1w1r</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/hl5_block_1w1r.h</path>
+		<file_kind>RTL_H</file_kind>
+		<module_name>hl5_block_1w1r</module_name>
+	</source_file>
+	<source_file>
+		<path>hl5_block_1w1r.bdm</path>
+		<file_kind>MEM_WRAP</file_kind>
+		<module_name>hl5_block_1w1r</module_name>
+	</source_file>
+	<module>
+		<name>hl5_block_1w1r</name>
+		<source_path>c_parts/hl5_block_1w1r.cc</source_path>
+		<crc>0</crc>
+		<resource_kind>RAM</resource_kind>
+		<area>100</area>
+		<delay>0.2</delay>
+		<setup_time>0.06</setup_time>
+		<slack>0</slack>
+		<latency>1</latency>
+		<pipelined>0</pipelined>
+		<stallable>0</stallable>
+		<word_count>51200</word_count>
+		<port>
+			<name>CLK</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<clock/>
+			<port_kind>clock</port_kind>
+		</port>
+		<port>
+			<name>WE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<inactive_value>0</inactive_value>
+			<port_kind>we</port_kind>
+			<access_port>0</access_port>
+		</port>
+		<port>
+			<name>CE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<inactive_value>0</inactive_value>
+			<pref_ctrl/>
+			<port_kind>ce</port_kind>
+			<access_port>0</access_port>
+		</port>
+		<port>
+			<name>WEM0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+			<access_port>0</access_port>
+		</port>
+		<port>
+			<name>D0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+			<port_kind>data</port_kind>
+			<access_port>0</access_port>
+		</port>
+		<port>
+			<name>A0</name>
+			<datatype W="16">sc_uint</datatype>
+			<direction>in</direction>
+			<port_kind>addr</port_kind>
+			<access_port>0</access_port>
+		</port>
+		<port>
+			<name>CE1</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<inactive_value>0</inactive_value>
+			<pref_ctrl/>
+			<port_kind>ce</port_kind>
+			<access_port>1</access_port>
+		</port>
+		<port>
+			<name>Q1</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>out</direction>
+			<port_kind>data</port_kind>
+			<access_port>1</access_port>
+		</port>
+		<port>
+			<name>A1</name>
+			<datatype W="16">sc_uint</datatype>
+			<direction>in</direction>
+			<port_kind>addr</port_kind>
+			<access_port>1</access_port>
+		</port>
+		<options></options>
+	</module>
+</lib_catalogue>
