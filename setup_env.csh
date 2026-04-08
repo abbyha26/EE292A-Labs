@@ -48,7 +48,6 @@ which riscv32-unknown-elf-gcc
 if ( $status != 0 ) then
     echo "ERROR: riscv32-unknown-elf-gcc not found."
     echo "Run the one-time toolchain install first:"
-    echo "  ./setup_toolchain.csh"
     exit 1
 endif
 
