@@ -25,7 +25,7 @@ set REPO_ROOT = `cd "$REPO_ROOT" && pwd`
 set TOOLCHAIN_ROOT = `dirname "$REPO_ROOT"`/riscv
 
 echo ""
-echo "[1/4] Loading Cadence modules..."
+echo "[1/3] Loading Cadence modules..."
 module purge
 module load stratus/latest
 module load xcelium/latest
@@ -38,23 +38,19 @@ if ( $status != 0 ) then
 endif
 
 echo ""
-echo "[2/4] Setting environment variables..."
+echo "[2/3] Setting environment variables..."
 setenv STRATUS_HLS_INSTALL $VRST_HOME
-setenv STRATUS_RTL $REPO_ROOT/hl5-master/hls/rtl
+setenv STRATUS_RTL $REPO_ROOT/hl5-master/hls
 setenv PATH $TOOLCHAIN_ROOT/bin:$PATH
 
 echo ""
-echo "[3/4] Checking RISC-V compiler..."
+echo "[3/3] Checking RISC-V compiler..."
 which riscv32-unknown-elf-gcc
 if ( $status != 0 ) then
     echo "ERROR: riscv32-unknown-elf-gcc not found."
     echo "Run the one-time toolchain install first:"
     exit 1
 endif
-
-echo ""
-echo "[4/4] Changing to HLS directory..."
-cd $REPO_ROOT/hl5-master/hls
 
 echo ""
 echo "Setup complete."
