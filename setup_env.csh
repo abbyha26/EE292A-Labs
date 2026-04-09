@@ -16,12 +16,13 @@ if ( ! $?tcsh ) then
 endif
 
 # Find repo root
+
 set SCRIPT_PATH = $0
 set REPO_ROOT = `dirname "$SCRIPT_PATH"`
 set REPO_ROOT = `cd "$REPO_ROOT" && pwd`
 
-# Toolchain install location
-set TOOLCHAIN_ROOT = /home/users/$USER/riscv
+# Toolchain install location: sibling to repo folder
+set TOOLCHAIN_ROOT = `dirname "$REPO_ROOT"`/riscv
 
 echo ""
 echo "[1/4] Loading Cadence modules..."
