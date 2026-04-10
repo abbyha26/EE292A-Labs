@@ -17,13 +17,10 @@ VERBOSE = 1
 #	This compile command line can use a version of the risc compiler that
 #	is built for 64-bit if you use the right settings. By default, we will 
 #	compile for 32-bit, since that is what the Columbia example is set up for.
-#		
-#		**edit: changed CROSS_COMPILE to use riscv32 compiler. To get 
-#		64-bit would need to use: CROSS_COMPILE ?= riscv64-unknown-elf-
 #
 ifdef SETUP_FOR_64_BIT
 
-CROSS_COMPILE ?= riscv64-unknown-elf-
+CROSS_COMPILE ?= riscv32-unknown-elf-
 CC = $(CROSS_COMPILE)gcc
 OBJDUMP = $(CROSS_COMPILE)objdump
 OBJCOPY = $(CROSS_COMPILE)objcopy
@@ -40,7 +37,7 @@ OBJDUMP = $(CROSS_COMPILE)objdump
 OBJCOPY = $(CROSS_COMPILE)objcopy
 
 CFLAGS ?=
-CFLAGS += -O2 -march=rv32im -mabi=ilp32
+CFLAGS += -O2 -march=rv32ima_zicsr -mabi=ilp32
 
 endif
 
