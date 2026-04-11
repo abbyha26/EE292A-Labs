@@ -37,7 +37,7 @@ endif
 
 echo ""
 echo "[2/4] Setting environment variables..."
-setenv STRATUS_HLS_INSTALL $VRST_HOME
+setenv STRATUS_HLS_INSTALL /cad/cadence/STRATUS_25.02.002_lnx86
 setenv STRATUS_RTL $HL5_ROOT/hls
 setenv PATH $TOOLCHAIN_ROOT/bin:$PATH
 rehash
